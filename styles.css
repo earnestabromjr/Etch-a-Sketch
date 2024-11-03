@@ -1,0 +1,67 @@
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic body styles */
+body {
+  font-family: sans-serif; /* Set a default font */
+  line-height: 1.5; /* Improve readability */
+  background-color: #f0f0f0; /* Set a background color */
+  color: #333; /* Set a text color */
+}
+
+/* Link styles */
+a {
+  color: #007bff; /* Set a link color */
+  text-decoration: none; /* Remove underlines */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; /* Make headings bold */
+  margin-bottom: 1rem; /* Add spacing below headings */
+}
+
+/* List styles */
+ul, ol {
+  list-style-type: none; /* Remove default bullet points/numbers */
+  margin-bottom: 1rem; /* Add spacing below lists */
+}
+
+/* Image styles */
+img {
+  max-width: 100%; /* Prevent images from overflowing their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent small space below images */
+}
+
+
+/* Utility classes (optional) */
+.container {
+  max-width: 960px; /* Set a max width for the main content */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem; /* Add padding around the container */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; /* Clear floats */
+}
+
+/* Responsive design (example) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+}
+
+/* ... Add your specific styles here ... */
+
