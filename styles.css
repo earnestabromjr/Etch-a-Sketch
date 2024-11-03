@@ -6,12 +6,12 @@
 }
 
 /* Basic body styles */
-body {
-  font-family: sans-serif; /* Set a default font */
-  line-height: 1.5; /* Improve readability */
-  background-color: #f0f0f0; /* Set a background color */
-  color: #333; /* Set a text color */
-}
+/*body {*/
+/*  font-family: sans-serif; !* Set a default font *!*/
+/*  line-height: 1.5; !* Improve readability *!*/
+/*  background-color: #f0f0f0; !* Set a background color *!*/
+/*  color: #333; !* Set a text color *!*/
+/*}*/
 
 /* Link styles */
 a {
@@ -56,12 +56,31 @@ img {
   clear: both; /* Clear floats */
 }
 
-/* Responsive design (example) */
-@media (max-width: 768px) {
-  .container {
-    padding: 1rem; /* Reduce padding on smaller screens */
-  }
-}
+/*!* Responsive design (example) *!*/
+/*@media (max-width: 768px) {*/
+/*  .container {*/
+/*    padding: 1rem; !* Reduce padding on smaller screens *!*/
+/*  }*/
+/*}*/
 
 /* ... Add your specific styles here ... */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 256px;
+  height: 256px;
+  /*border: 1px solid black;*/
 
+}
+
+.grid-item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: dimgray;
+}
+
+.grid-item:hover {
+  background-color: lightgray;
+}
