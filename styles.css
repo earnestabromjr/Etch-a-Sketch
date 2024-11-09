@@ -84,7 +84,12 @@ img {
 .grid-item:hover {
   background-color: lightgray;
 }
-
 #buttons {
-
+  align-items: center;
+  margin-left: 5rem;
+}
+input[type="button"] {
+  display: flex;
+  width: 80px;
+  align-items: center;
 }
