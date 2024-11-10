@@ -73,22 +73,32 @@ img {
 
 }
 
+body {
+  background-color: lightgray;
+}
+
+.div-color-container {
+  background-color: #36013f;
+}
+
 .grid-item {
   width: 16px;
   height: 16px;
   border: 1px solid black;
   box-sizing: border-box;
-  background-color: dimgray;
+  background-color: darkblue;
 }
 
-.grid-item:hover {
-  background-color: lightgray;
-}
-#buttons {
+/*.grid-item:hover {*/
+/*  background-color: lightgray;*/
+/*}*/
+#buttons-container {
   align-items: center;
   margin-left: 5rem;
 }
 input[type="button"] {
+  margin: 1rem 0;
+  border: none;
   display: flex;
   width: 80px;
   align-items: center;
