@@ -21,6 +21,6 @@ const buttonContainer = document.getElementById('buttons-container');
 const divNumber = document.getElementById('divNumber');
 
 const newGrid = container.childNodes;
-newGrid.addEventListener('mouseleave', (e) => {
-    newGrid.onmousemove =
+newGrid.addEventListener('mouse', (e) => {
+    changeColors(e.target);
 })
