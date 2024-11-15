@@ -26,7 +26,11 @@ a:hover {
 /* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; /* Make headings bold */
-  margin-bottom: 1rem; /* Add spacing below headings */
+  /*margin-left: 5em;*/
+  margin: 2em auto 5em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* List styles */
@@ -34,14 +38,6 @@ ul, ol {
   list-style-type: none; /* Remove default bullet points/numbers */
   margin-bottom: 1rem; /* Add spacing below lists */
 }
-
-/* Image styles */
-img {
-  max-width: 100%; /* Prevent images from overflowing their container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Prevent small space below images */
-}
-
 
 /* Utility classes (optional) */
 .container {
@@ -64,11 +60,18 @@ img {
 /*}*/
 
 /* ... Add your specific styles here ... */
+.main {
+  /*display: flex;*/
+}
+
+
 #container {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  width: 256px;
-  height: 256px;
+  width: auto;
+  height: auto;
+  align-items: center;
   /*border: 1px solid black;*/
 
 }
@@ -82,23 +85,39 @@ body {
 }
 
 .grid-item {
-  width: 16px;
-  height: 16px;
-  border: 1px solid black;
+  display: flex;
+  flex: 1 1;
+  aspect-ratio: 1;
+  /*min-width: 256px;*/
+  align-items: center;
+  justify-content: center;
+  /*width: 10px;*/
+  /*height: 10px;*/
+  /*border: 1px solid black;*/
   box-sizing: border-box;
-  background-color: white;
+  background-color:  #4CAF50;
 }
 
 /*.grid-item:hover {*/
 /*  background-color: lightgray;*/
 /*}*/
 #buttons-container {
+  display: flex;
+  font-family: 'Consolas', sans-serif;
   align-items: center;
-  margin-left: 5rem;
+  justify-content: center;
+  margin: auto;
+  vertical-align: top;
 }
+label {
+  display: inline-block;
+  margin: 1rem ;
+}
+
 input[type="button"] {
-  margin: 1rem 0;
-  border: none;
+  margin: 1rem auto;
+  border: darkgray;
+  border-radius: 5px;
   display: flex;
   width: 80px;
   align-items: center;
