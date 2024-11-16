@@ -48,10 +48,6 @@ body {
   background-color: hsl(75, 35%, 81%);
 }
 
-.div-color-container {
-  background-color: #36013f;
-}
-
 .grid-item {
   display: flex;
   flex: auto auto;
@@ -60,7 +56,7 @@ body {
   justify-content: center;
   /*border: 1px solid black;*/
   box-sizing: border-box;
-  background-color:  #4CAF50;
+  background-color:  hsl(51, 88%, 23%, 82%);
 }
 
 /*.grid-item:hover {*/
@@ -71,22 +67,19 @@ body {
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  justify-items: auto;
   margin: auto;
   vertical-align: top;
 }
 label {
-  display: inline-block;
   margin: 1rem ;
 }
 
 input[type="button"] {
   margin: 1rem auto;
-  /*border: darkgray;*/
-  border-radius: 5px;
   display: flex;
   width: 80px;
-  align-items: center;
 }
 
 input, button {

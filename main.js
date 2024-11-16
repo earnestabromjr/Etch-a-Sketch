@@ -1,5 +1,6 @@
 // Loop to create varied number of divs
 // noinspection SpellCheckingInspection
+let isRainbow = false;
 
 function setup(gridNumber) {
     const container = document.getElementById('container');
@@ -19,6 +20,10 @@ function createCells(gridNumber, container) {
     }
 }
 
+function toggleRainbow() {
+    isRainbow = !isRainbow;
+}
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -29,13 +34,19 @@ function getRandomColor() {
 }
 
 function changeColors(element) {
-    element.target.style.backgroundColor = getRandomColor();
+    const colorPicker = document.getElementById('colorPicker');
+    if (isRainbow) {
+        element.target.style.backgroundColor = getRandomColor();
+    }
+    else {
+        element.target.style.backgroundColor = colorPicker.value
+    }
 }
 
 function resetGrid() {
     const cells = document.getElementsByClassName('grid-item');
     Array.from(cells).forEach(cell => {
-        cell.style.backgroundColor =  '#4CAF50';
+        cell.style.backgroundColor =  'hsl(51, 88%, 23%, 82%)';
     });
 }
 
