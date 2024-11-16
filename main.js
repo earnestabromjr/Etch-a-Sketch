@@ -1,4 +1,3 @@
-// Loop to create varied number of divs
 // noinspection SpellCheckingInspection
 let isRainbow = false;
 
