@@ -1,4 +1,6 @@
 // Loop to create varied number of divs
+// noinspection SpellCheckingInspection
+
 function setup(gridNumber) {
     const container = document.getElementById('container');
     container.id = 'container';
@@ -53,7 +55,5 @@ function changeGrid() {
 }
 
 setup(16);
-const buttonContainer = document.getElementById('buttons-container');
-const divNumber = document.getElementById('divNumber');
 
 
