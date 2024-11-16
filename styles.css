@@ -1,55 +1,19 @@
 /* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 * {
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   margin: 0;
   padding: 0;
 }
 
-/* Basic body styles */
-/*body {*/
-/*  font-family: sans-serif; !* Set a default font *!*/
-/*  line-height: 1.5; !* Improve readability *!*/
-/*  background-color: #f0f0f0; !* Set a background color *!*/
-/*  color: #333; !* Set a text color *!*/
-/*}*/
-
-/* Link styles */
-a {
-  color: #007bff; /* Set a link color */
-  text-decoration: none; /* Remove underlines */
-}
-
-a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
-
 /* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; /* Make headings bold */
   /*margin-left: 5em;*/
-  margin: 2em auto 5em auto;
+  margin: 2em auto 1em auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* List styles */
-ul, ol {
-  list-style-type: none; /* Remove default bullet points/numbers */
-  margin-bottom: 1rem; /* Add spacing below lists */
-}
-
-/* Utility classes (optional) */
-.container {
-  max-width: 960px; /* Set a max width for the main content */
-  margin: 0 auto; /* Center the container */
-  padding: 2rem; /* Add padding around the container */
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; /* Clear floats */
 }
 
 /*!* Responsive design (example) *!*/
@@ -59,15 +23,17 @@ ul, ol {
 /*  }*/
 /*}*/
 
-/* ... Add your specific styles here ... */
-.main {
-  /*display: flex;*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
 #container {
   /*aspect-ratio: 1;*/
-  margin: auto;
+  margin: 10% auto 20%;
   display: flex;
   flex-wrap: wrap;
   max-width: 256px; /* Set a max width for the main content */
@@ -78,7 +44,8 @@ ul, ol {
 }
 
 body {
-  background-color: lightgray;
+  background-image: url("tan-paper-bg.jpg");
+  background-color: hsl(75, 35%, 81%);
 }
 
 .div-color-container {
@@ -89,12 +56,9 @@ body {
   display: flex;
   flex: auto auto;
   aspect-ratio: 1;
-  /*min-width: 256px;*/
   align-items: center;
   justify-content: center;
-  /*width: 10px;*/
-  /*height: 10px;*/
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   box-sizing: border-box;
   background-color:  #4CAF50;
 }
@@ -104,7 +68,8 @@ body {
 /*}*/
 #buttons-container {
   display: flex;
-  font-family: 'Consolas', sans-serif;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -117,9 +82,19 @@ label {
 
 input[type="button"] {
   margin: 1rem auto;
-  border: darkgray;
+  /*border: darkgray;*/
   border-radius: 5px;
   display: flex;
   width: 80px;
   align-items: center;
+}
+
+input, button {
+  /*margin: 5px;*/
+  background-color: hsl(51, 88%, 23%, 82%);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: hsl(75, 35%, 81%);
 }
