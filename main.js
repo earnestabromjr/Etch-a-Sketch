@@ -9,9 +9,9 @@ function createCells(inputColumns, inputRows, container) {
     for (let i = 0; i < inputRows * inputColumns; i++) {
         let gridDiv = document.createElement('div');
         gridDiv.classList.add('grid-item');
-        gridDiv.style.height = inputRows + 'px';
-        gridDiv.style.width = inputColumns + 'px';
-        container.style.width = (inputColumns * inputRows) +'px';
+        gridDiv.style.height = (256 / inputColumns) + 'px';
+        gridDiv.style.width = 'auto';
+        // container.style.width = (inputColumns * inputRows) +'px';
         gridDiv.addEventListener('mouseover', changeColors);
 
         container.appendChild(gridDiv);
@@ -37,11 +37,12 @@ function changeGrid() {
     cells.forEach(cell => {
         cell.remove();
     })
+    container.innerHTML = '';
    createCells(inputColumns, inputRows, container);
     let gridDiv = document.getElementById('grid-item');
-    gridDiv.style.width = '16px';
-    gridDiv.style.height = '16px';
-    container.style.width = inputColumns * inputRows + 'px';
+    gridDiv.style.width = 'auto';
+    gridDiv.style.height = 'auto';
+    // container.style.width = inputColumns * inputRows + 'px';
     // const cells = document.getElementsByClassName('grid-item');
     // Array.from(cells).forEach(cell => {
     //     cell.style.width = inputColumns + 'px';

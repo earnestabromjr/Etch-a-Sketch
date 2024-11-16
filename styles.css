@@ -66,12 +66,13 @@ ul, ol {
 
 
 #container {
+  /*aspect-ratio: 1;*/
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  width: auto;
-  height: auto;
-  align-items: center;
+  max-width: 256px; /* Set a max width for the main content */
+  max-height: 256px;
+  /*align-items: center;*/
   /*border: 1px solid black;*/
 
 }
@@ -86,14 +87,14 @@ body {
 
 .grid-item {
   display: flex;
-  flex: 1 1;
+  flex: auto auto;
   aspect-ratio: 1;
   /*min-width: 256px;*/
   align-items: center;
   justify-content: center;
   /*width: 10px;*/
   /*height: 10px;*/
-  /*border: 1px solid black;*/
+  border: 1px solid black;
   box-sizing: border-box;
   background-color:  #4CAF50;
 }
